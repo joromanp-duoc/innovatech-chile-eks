@@ -40,7 +40,7 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          cd frontend
+          cd front_despacho
           docker build -t $ECR_REGISTRY/${ECR_REPO_FRONTEND}:${IMAGE_TAG} .
           docker push $ECR_REGISTRY/${ECR_REPO_FRONTEND}:${IMAGE_TAG}
 
@@ -49,7 +49,7 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          cd backend
+          cd back-Ventas_SpringBoot
           docker build -t $ECR_REGISTRY/${ECR_REPO_BACKEND_VENTAS}:${IMAGE_TAG} .
           docker push $ECR_REGISTRY/${ECR_REPO_BACKEND_VENTAS}:${IMAGE_TAG}
 
@@ -58,7 +58,7 @@ jobs:
         env:
           ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         run: |
-          cd backend
+          cd back-Despachos_SpringBoot
           docker build -t $ECR_REGISTRY/${ECR_REPO_BACKEND_DESPACHOS}:${IMAGE_TAG} .
           docker push $ECR_REGISTRY/${ECR_REPO_BACKEND_DESPACHOS}:${IMAGE_TAG}
 
