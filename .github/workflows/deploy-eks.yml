@@ -7,7 +7,7 @@ on:
 
 env:
   # Repos de ECR (no son secretos, solo nombres)
-  ECR_REPO_FRONTEND: innovatech-frontend
+  ECR_REPO_FRONTEND: ventas-frontend
   ECR_REPO_BACKEND_VENTAS: ventas-backend
   ECR_REPO_BACKEND_DESPACHOS: despachos-backend
   ECR_REPO_DB: innovatech-db
