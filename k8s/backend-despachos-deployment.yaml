@@ -43,16 +43,16 @@ spec:
               memory: "512Mi"
 
           # HEALTH CHECKS (PROBES)
-          readinessProbe:
-            httpGet:
-              path: /api/health
-              port: 8081
-            initialDelaySeconds: 5
-            periodSeconds: 5
+          # readinessProbe:
+          #   httpGet:
+          #     path: /api/health
+          #     port: 8081
+          #   initialDelaySeconds: 5
+          #   periodSeconds: 5
 
-          livenessProbe:
-            httpGet:
-              path: /api/health
-              port: 8081
-            initialDelaySeconds: 10
-            periodSeconds: 10
+          # livenessProbe:
+          #   httpGet:
+          #     path: /api/health
+          #     port: 8081
+          #   initialDelaySeconds: 10
+          #   periodSeconds: 10
