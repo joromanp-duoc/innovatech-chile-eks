@@ -19,9 +19,9 @@ spec:
           ports:
             - containerPort: 8080
           env:
-            - name: DB_HOST
+            - name: DB_ENDPOINT
               value: "innovatech-db"
-            - name: DB_USER
+            - name: DB_USERNAME
               value: "root"
             - name: DB_PASSWORD
               valueFrom:
